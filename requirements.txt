@@ -1,0 +1,7 @@
+pandas
+numpy
+tabulate
+toml
+matplotlib
+seaborn
+ydata_profiling

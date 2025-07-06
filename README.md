@@ -34,7 +34,9 @@
 <br>
 
 ## 📊 Sample output screenshot
-![dashboard](docs/dashboard_sample.png)
+![Stats](docs/dashboard_sample.png)
+
+![dashboard](docs/dashboard_sample2.png)
 
 <br>
 
@@ -50,3 +52,19 @@
 <br>
 
 ## 🛠 Project layout
+.
+├─ arb-assist_dashboard.ipynb   ← one-click Colab notebook
+├─ tiers_builder.py             ← CLI helper (same logic, no plots)
+├─ requirements.txt             ← minimal deps for local runs
+├─ docs/                        ← screenshots or extra docs
+├─ .gitignore
+└─ LICENSE                      ← MIT
+
+<br>
+
+## 🤝 Contributing
+Pull requests welcome—clean code & a short rationale in the PR description, please.
+
+---
+
+> Built and maintained by **Hamza** – full-stack & DevOps engineer, cloud governance by day, crypto side-projects by night.

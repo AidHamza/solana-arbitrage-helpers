@@ -1,0 +1,8 @@
+# Jupyter & Python
+*.ipynb_checkpoints
+__pycache__/
+*.py[cod]
+# Colab temp
+.profile.html
+# logs, data
+*.csv
