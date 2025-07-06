@@ -1,8 +1,8 @@
 <!-- README.md -->
-<h1 align="center">arb-assist → SMB Dashboard</h1>
+<h1 align="center">arb-assist logs analysis</h1>
 
 <p align="center">
-  <em>Turn raw <code>arb-assist</code> logs into data-driven <code>smb-onchain</code> configs in one Colab run.</em>
+  <em>Turn raw <code>arb-assist</code> logs into data-driven <code>smb-onchain | notarb</code> configs in one Colab run.</em>
 </p>
 
 <p align="center">
@@ -10,30 +10,41 @@
     <img alt="Open in Colab" src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white">
   </a>
   &nbsp;
-  <a href="LICENSE"><img alt="MIT license" src="https://camo.githubusercontent.com/cd878d57e2b361acc4718461dd7a9c2828f3c132dcfb18d363883883a7df60a3/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f496c65726961796f2f6d61726b646f776e2d6261646765733f7374796c653d666f722d7468652d6261646765"></a>
+  <a href="LICENSE">
+    <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge">
+  </a>
 </p>
 
 ---
 
+## 🔒 Security & disclaimers
+
+* This tool **does not sign or send transactions**, never asks for private keys, and never edits your bot configs directly.  
+* Always review generated TOML and Python before execution—**trust but verify**.  
+* If something is unclear, lean on AI explanations or static analysis tools before running code in production.  
+* Use at your own risk; no warranty is provided.
+
+<br>
+
 ## ✨ What it does
-* **Reads** yesterday’s `arb-assist-log.csv`
-* **Builds** a full dashboard (quantile table, histograms, 5-min profit curve)
-* **Generates** a ready-to-paste **`[[filter_thresholds]]`** block with sane floors/caps
-* **Flags** mints that blow the 128-account limit
-* **Exports** an interactive `profile.html`
-* **Emits** a Markdown KPI snippet you can drop into Discord/Slack
+* **Reads** yesterday’s `arb-assist-log.csv`.
+* **Builds** a full dashboard (quantile table, histograms, 5-min profit curve).
+* **Generates** a ready-to-paste **`[[filter_thresholds]]`** block with sane floors/caps.
+* **Flags** mints that blow the 128-account limit.
+* **Exports** an interactive `profile.html`.
+* **Emits** a Markdown KPI snippet you can drop into Discord/Slack.
 
 <br>
 
 ## 🚀 Quick start
 | use-case | steps |
 | --- | --- |
-| **Colab (zero local deps)** | 1. open the notebook link<br>2. upload your `arb-assist-log.csv` (left sidebar → Files → Upload)<br>3. `Runtime ▸ Run all`<br>4. copy the printed `filter_thresholds` block → paste into `arb-assist.toml` |
+| **Colab (zero local deps)** | 1. open the notebook link<br>2. upload your `arb-assist-log.csv` (left sidebar → Files → Upload)<br>3. **Runtime ▸ Run all**<br>4. copy the printed `filter_thresholds` block → paste into `arb-assist.toml` |
 | **CLI (server / cron)** | `python tiers_builder.py path/to/arb-assist-log.csv > tiers.toml` |
 
 <br>
 
-## 📊 Sample output screenshot
+## 📊 Sample output screenshots
 ![Stats](docs/dashboard_sample.png)
 
 ![dashboard](docs/dashboard_sample2.png)
@@ -52,19 +63,21 @@
 <br>
 
 ## 🛠 Project layout
+```text
 .
-├─ arb-assist_dashboard.ipynb   ← one-click Colab notebook
-├─ tiers_builder.py             ← CLI helper (same logic, no plots)
-├─ requirements.txt             ← minimal deps for local runs
-├─ docs/                        ← screenshots or extra docs
-├─ .gitignore
+├─ arb-assist_dashboard.ipynb   ← one-click Colab notebook  
+├─ tiers_builder.py             ← CLI helper (same logic, no plots)  
+├─ requirements.txt             ← minimal deps for local runs  
+├─ docs/                        ← screenshots or extra docs  
+├─ .gitignore  
 └─ LICENSE                      ← MIT
+```
 
 <br>
 
 ## 🤝 Contributing
-Pull requests welcome—clean code & a short rationale in the PR description, please.
+Pull requests welcome—clean code and a short rationale in the PR description, please.
 
 ---
 
-> Built and maintained by **Hamza** – full-stack & DevOps engineer, cloud governance by day, crypto side-projects by night.
+> Built and maintained by **Hamza** – full-stack & DevOps engineer, cloud-governance by day, crypto side-projects by night.
