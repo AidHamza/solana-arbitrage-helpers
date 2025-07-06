@@ -6,11 +6,11 @@
 </p>
 
 <p align="center">
-  <a href="https://colab.research.google.com/github/YOUR-USER/arb-assist-dashboard/blob/main/arb-assist_dashboard.ipynb">
-    <img alt="Open in Colab" src="https://img.shields.io/badge/Run-in-Colab-000000?logo=googlecolab&logoColor=white">
+  <a href="https://colab.research.google.com/drive/1IfJ-A1Ppu1v2OzpFw_gv1f3Eu9W9aK6K?usp=sharing">
+    <img alt="Open in Colab" src="https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white">
   </a>
   &nbsp;
-  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <a href="LICENSE"><img alt="MIT license" src="https://camo.githubusercontent.com/cd878d57e2b361acc4718461dd7a9c2828f3c132dcfb18d363883883a7df60a3/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f496c65726961796f2f6d61726b646f776e2d6261646765733f7374796c653d666f722d7468652d6261646765"></a>
 </p>
 
 ---
